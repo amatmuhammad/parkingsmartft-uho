@@ -32,7 +32,7 @@
         <div class="card p-3 shadow-sm">
 
             <div class="d-flex justify-content-between align-items-center mb-5">
-                <h2 class="mb-0 font-weight-bold text-dark">Daftar Reservasi Parkir</h2>
+                <h4 class="mb-0 font-weight-bold text-dark">Daftar Reservasi Parkir</h4>
 
                 <button class="btn btn-rounded btn-primary" data-toggle="modal" data-target="#addReservationModal">
                     Tambah Reservasi
