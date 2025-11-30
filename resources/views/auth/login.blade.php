@@ -71,7 +71,7 @@
 
                 <!-- Left Image -->
                 <div class="col-lg-7 col-md-6 modal-bg-img"
-                    style="background-image: url({{ asset('public/assets/assets/images/tp.jpg') }}); background-size: cover; background-position: center;">
+                    style="background-image: url({{ asset('/public/assets/assets/images/tp.jpg') }}); background-size: cover; background-position: center;">
                 </div>
 
                 <!-- Right Login Form -->
