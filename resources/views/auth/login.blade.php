@@ -8,8 +8,8 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Login</title>
 
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/assets/images/fav.png') }}">
-    <link href="{{ asset('assets/dist/css/style.min.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/public/assets/assets/images/fav.png') }}">
+    <link href="{{ asset('/public/assets/dist/css/style.min.css') }}" rel="stylesheet">
 </head>
 
 <body>
