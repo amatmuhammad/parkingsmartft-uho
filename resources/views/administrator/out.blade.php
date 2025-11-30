@@ -87,9 +87,9 @@ function escapeJsString(str) {
 $(document).ready(function () {
 
     // Set tanggal
-    const d = new Date();
-    document.getElementById("date").innerHTML =
-        `${String(d.getDate()).padStart(2,"0")}/${d.getMonth()+1}/${d.getFullYear()}`;
+    // const d = new Date();
+    // document.getElementById("date").innerHTML =
+    //     `${String(d.getDate()).padStart(2,"0")}/${d.getMonth()+1}/${d.getFullYear()}`;
 
     // Init datatable
     $("#reservationTable").DataTable({
