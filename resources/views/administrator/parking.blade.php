@@ -163,7 +163,7 @@ window.openScanOutModal = function(id, userName, plateNumber, slotName, startTim
     }
 
     // URL untuk proses scan out (dibaca oleh scanner)
-    const scanOutUrl = `https://fe7875cce83b.ngrok-free.app/scan-out/token/${token}`;
+    const scanOutUrl = `https://smartparkingft.com/scan-out/token/${token}`;
 
     // QR Code Generator API
     const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(scanOutUrl)}`;

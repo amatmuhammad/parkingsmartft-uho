@@ -93,7 +93,7 @@
                         <!-- QR Code -->
                                 <td>
                                     @php
-                                        $scanUrl = "https://fe7875cce83b.ngrok-free.app/scan-in/" . $r->qrcode_token;
+                                        $scanUrl = "https://smartparkingft.com/scan-in/" . $r->qrcode_token;
                                     @endphp
 
                                     <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data={{ urlencode($scanUrl) }}" width="70">
@@ -226,7 +226,7 @@
                 if (r.status === 'booked')    statusBadge = `<span class="badge badge-pill bg-warning text-dark">Booked</span>`;
                 if (r.status === 'active')    statusBadge = `<span class="badge badge-pill bg-success text-white">Active</span>`;
 
-                let qrUrl = `https://fe7875cce83b.ngrok-free.app/scan-in/${r.qrcode_token}`;
+                let qrUrl = `https://smartparkingft.com/scan-in/${r.qrcode_token}`;
 
                 let row = table.row.add([
                     index + 1,

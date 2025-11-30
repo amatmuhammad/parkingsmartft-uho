@@ -401,7 +401,7 @@ function openQR(type){
         token = lastQR.qrcode_out;
     }
 
-    let qrScanUrl = `https://corklike-longitudinal-danial.ngrok-free.dev/${endpoint}?token=${token}`;
+    let qrScanUrl = `https://smartparkingft.com/${endpoint}?token=${token}`;
 
     let qrImgUrl = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(qrScanUrl)}`;
 
@@ -497,7 +497,7 @@ $("#form-reservasi").submit(function(e){
             }
 
             // QR IN
-            let qrScanUrl = `https://corklike-longitudinal-danial.ngrok-free.dev/scan-user/${res.qrcode_token}`;
+            let qrScanUrl = `https://smartparkingft.com/scan-user/${res.qrcode_token}`;
             let qrImgUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(qrScanUrl)}`;
             $("#qr-image").attr("src", qrImgUrl);
 
