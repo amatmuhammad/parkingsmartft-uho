@@ -8,15 +8,15 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Register</title>
 
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/assets/images/fav.png') }}">
-    <link href="{{ asset('assets/dist/css/style.min.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/public/assets/assets/images/fav.png') }}">
+    <link href="{{ asset('/public/assets/dist/css/style.min.css') }}" rel="stylesheet">
 </head>
 
 <body>
 
 <style>
     .auth-wrapper {
-        background-image: url("{{ asset('assets/assets/images/big/auth-bg4.png') }}");
+        background-image: url("{{ asset('/public/assets/assets/images/big/auth-bg4.png') }}");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -68,7 +68,7 @@
 
             <!-- Left Image -->
             <div class="col-lg-6 col-md-5 d-none d-md-block p-0">
-                <img src="{{ asset('assets/assets/images/tp.jpg') }}" 
+                <img src="{{ asset('/public/assets/assets/images/tp.jpg') }}" 
                      style="width:100%; height:100%; object-fit:cover;">
             </div>
 
@@ -76,7 +76,7 @@
             <div class="col-lg-6 col-md-7 bg-white p-5">
 
                 <div class="text-center mb-3">
-                    <img src="{{ asset('assets/assets/images/fav.png') }}" 
+                    <img src="{{ asset('/public/assets/assets/images/fav.png') }}" 
                          style="height: 90px;">
                 </div>
 
@@ -140,8 +140,8 @@
 
 </div>
 
-<script src="{{ asset('assets/assets/libs/jquery/dist/jquery.min.js') }}"></script>
-<script src="{{ asset('assets/assets/libs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('/public/assets/assets/libs/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ asset('/public/assets/assets/libs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
 <script>
     const toggle1 = document.getElementById('togglePwd');
