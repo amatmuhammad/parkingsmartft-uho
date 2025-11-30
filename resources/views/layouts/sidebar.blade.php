@@ -14,9 +14,9 @@
                         <a href="#">
                             <b class="logo-icon">
                                 <!-- Dark Logo icon -->
-                                <img src="{{ asset('assets/assets/images/SMART1.png') }}" alt="homepage" class="dark-logo pt-2" style="width: 150px; heigth:70px;" />
+                                <img src="{{ asset('/public/assets/assets/images/SMART1.png') }}" alt="homepage" class="dark-logo pt-2" style="width: 150px; heigth:70px;" />
                                 <!-- Light Logo icon -->
-                                <img src="{{ asset('assets/assets/images/SMART1.png') }}" alt="homepage" class="light-logo" style="width: 150px; heigth:70px;"/>
+                                <img src="{{ asset('/public/assets/assets/images/SMART1.png') }}" alt="homepage" class="light-logo" style="width: 150px; heigth:70px;"/>
                             </b>
                                 <!--End Logo icon -->
                                 <!-- Logo text -->
