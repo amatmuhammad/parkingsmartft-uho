@@ -152,7 +152,7 @@ function loadActiveParkings() {
                         index + 1,
                         `
                         <div class="d-flex align-items-center">
-                            <img src="https://i.pravatar.cc/45?img=${index + 1}" class="rounded-circle me-2" width="45" height="45">
+                            
                             <div>
                                 <h6 class="mb-0 ml-3">${r.user.name}</h6>
                                 <small class="text-muted ml-3">${r.user.email}</small>

@@ -92,6 +92,13 @@
                             </span>
                         </p>
 
+
+                        <p><strong>Metode Pembayaran :</strong><br>
+                            <span class="badge badge-success p-2" style="font-size: 18px;">
+                                Cash/Tunai
+                            </span>
+                        </p>
+
                     </div>
 
                      @can('isUser')

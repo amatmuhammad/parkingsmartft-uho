@@ -332,41 +332,41 @@ class Controller extends BaseController
     //     return response()->json($slot ? [$slot] : []); // array agar aman di frontend user
     // }
 
-   public function getSlotsByVehicle($vehicleId)
-{
-    $vehicle = Vehicle::find($vehicleId);
+    public function getSlotsByVehicle($vehicleId)
+    {
+        $vehicle = Vehicle::find($vehicleId);
 
-    if (!$vehicle) {
-        return response()->json([]);
+        if (!$vehicle) {
+            return response()->json([]);
+        }
+
+        // Ambil type area berdasarkan vehicle_type
+        $area = ParkingArea::where('type', $vehicle->vehicle_type)->first();
+
+        if (!$area) {
+            return response()->json([]);
+        }
+
+        // Ambil 1 slot paling awal (ascending)
+        $slot = ParkingSlot::where('area_id', $area->id)
+            ->where('status', 'available')
+            ->orderBy('slot_name', 'asc')
+            ->first();
+
+        if (!$slot) {
+            return response()->json([]);
+        }
+
+        // Return dengan type dari tabel parking_area
+        return response()->json([
+            [
+                'id'        => $slot->id,
+                'slot_name' => $slot->slot_name,
+                'status'    => $slot->status,
+                'type'      => $area->type,   // ← INI type dari parking_area
+            ]
+        ]);
     }
-
-    // Ambil type area berdasarkan vehicle_type
-    $area = ParkingArea::where('type', $vehicle->vehicle_type)->first();
-
-    if (!$area) {
-        return response()->json([]);
-    }
-
-    // Ambil 1 slot paling awal (ascending)
-    $slot = ParkingSlot::where('area_id', $area->id)
-        ->where('status', 'available')
-        ->orderBy('slot_name', 'asc')
-        ->first();
-
-    if (!$slot) {
-        return response()->json([]);
-    }
-
-    // Return dengan type dari tabel parking_area
-    return response()->json([
-        [
-            'id'        => $slot->id,
-            'slot_name' => $slot->slot_name,
-            'status'    => $slot->status,
-            'type'      => $area->type,   // ← INI type dari parking_area
-        ]
-    ]);
-}
 
 
 

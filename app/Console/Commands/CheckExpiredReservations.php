@@ -14,9 +14,14 @@ class CheckExpiredReservations extends Command
 
     public function handle()
     {
+        // $expiredReservations = Reservation::where('status', 'booked')
+        //     ->where('expired_at', '<=', Carbon::now())
+        //     ->get();
         $expiredReservations = Reservation::where('status', 'booked')
+            ->whereNull('start_time')
             ->where('expired_at', '<=', Carbon::now())
             ->get();
+
 
         $count = 0;
         
