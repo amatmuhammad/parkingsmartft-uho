@@ -140,9 +140,9 @@
         </div>
     </div>
 
-    <script src="{{ asset('assets/assets/libs/jquery/dist/jquery.min.js') }}"></script>
-    <script src="{{ asset('assets/assets/libs/popper.js/dist/umd/popper.min.js') }}"></script>
-    <script src="{{ asset('assets/assets/libs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/public/assets/assets/libs/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('/public/assets/assets/libs/popper.js/dist/umd/popper.min.js') }}"></script>
+    <script src="{{ asset('/public/assets/assets/libs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
     <script>
         $(".preloader").fadeOut();
