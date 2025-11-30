@@ -22,7 +22,7 @@
 
         /* Pastikan background kelihatan penuh */
         .auth-wrapper {
-            background-image: url("{{ asset('assets/assets/images/big/auth-bg4.png') }}") !important;
+            background-image: url("{{ asset('/public/assets/assets/images/big/auth-bg4.png') }}") !important;
             background-size: cover !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
