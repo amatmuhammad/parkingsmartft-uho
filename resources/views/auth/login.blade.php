@@ -79,7 +79,7 @@
                     <div class="p-4">
 
                         <div class="text-center">
-                            <img src="{{ asset('assets/assets/images/fav.png') }}" alt="Logo"
+                            <img src="{{ asset('/public/assets/assets/images/fav.png') }}" alt="Logo"
                                 style="height:100px; width:100px;">
                         </div>
 
