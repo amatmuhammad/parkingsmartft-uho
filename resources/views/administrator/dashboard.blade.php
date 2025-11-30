@@ -25,11 +25,11 @@
             </div>
         </div>
         <div class="col-5 align-self-center">
-            <div class="customize-input float-right">
+            {{-- <div class="customize-input float-right">
                 <button class="btn btn-outline-cyan btn-rounded">
                     <h5 id="date" class="pt-2"></h5>
                 </button>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
